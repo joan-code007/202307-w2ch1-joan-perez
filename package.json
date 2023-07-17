@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "husky": "^8.0.3",
+    "sass": "^1.63.6"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.6",
+    "@commitlint/config-conventional": "^17.6.6",
+    "husky": "^8.0.0"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "build-styles": "npx sass src/sass/styles.scss public/styles/styles.css",
+    "build-styles:dev": "npx sass src/sass/styles.scss public/styles/styles.css --watch"
+  }
+}
