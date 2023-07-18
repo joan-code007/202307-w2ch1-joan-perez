@@ -6,27 +6,82 @@
 
 .main__container {
   display: flex;
+  flex-direction: column;
 }
 
 .container__sedans {
-  background-color: rgb(255, 140, 0);
+  background-color: hsl(31, 77%, 52%);
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
 }
 
-.article__h1 {
-  color: rgb(255, 255, 255);
+.article__h2--sedans {
+  color: hsl(0, 0%, 95%);
 }
 
-.article__p {
-  color: rgb(255, 255, 255);
+.article__p--sedans {
+  color: hsla(0, 0%, 100%, 0.75);
 }
 
-.article__button {
+.article__button--sedans {
   cursor: pointer;
   border-radius: 30px 30px 30px 30px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(255, 140, 0);
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(31, 77%, 52%);
+}
+
+.container__suvs {
+  background-color: hsl(184, 100%, 22%);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.article__h2--suvs {
+  color: hsl(0, 0%, 95%);
+}
+
+.article__p--suvs {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.article__button--suvs {
+  cursor: pointer;
+  border-radius: 30px 30px 30px 30px;
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(184, 100%, 22%);
+}
+
+.container__luxury {
+  background-color: hsl(179, 100%, 13%);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.article__h2--luxury {
+  color: hsl(0, 0%, 95%);
+}
+
+.article__p--luxury {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.article__button--luxury {
+  cursor: pointer;
+  border-radius: 30px 30px 30px 30px;
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(179, 100%, 13%);
+}
+
+@media screen and (min-width: 1440px) {
+  .slide-arrows-container {
+    display: flex;
+    padding: 0;
+    align-self: flex-end;
+  }
 }
